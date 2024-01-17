@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <label for="firstName">First Name: </label>
+      <input type="text" name="firstName" value="" />
+      <!--Incase of text input, value attribute is used for default value-->
+      <!--input is a self-closing tag, different types of input e.g:text, date, file-->
+      <br />
+      <br />
+      <label for="lastName">Last Name: </label>
+      <input type="text" name="lastName" placeholder="Enter last name" />
+      <br />
+      <br />
+      <label>Gender:</label> <br />
+
+      <!--Incase of radio button, input with same name attribute will be considered as a group-->
+      <input type="radio" name="gender" value="male" />
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" value="female" />
+      <label for="female">Female</label>
+    </form>
+  </body>
+</html>

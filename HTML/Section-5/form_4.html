@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XYZ Game Competition</title>
+  </head>
+  <body>
+    <h1>XYZ Game Competition Registration</h1>
+    <div>
+      <form
+        action="https://www.w3schools.com/action_page.php"
+        target="_blank"
+        method="post"
+      >
+        <!--get method submit form data through url, but post don't-->
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Your Name" />
+        <br />
+        <br />
+
+        <!--Label is only for display purpose but value attribute is actually saved.-->
+        <label for="gender">Gender:</label>
+        <input type="radio" value="Male" name="gender" />
+        <label>Male</label>
+        <input type="radio" value="Female" name="gender" />
+        <label>Female</label>
+        <br />
+        <br />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Your Email" required />
+        <br />
+        <br />
+
+        <label>Select a Game:</label>
+        <input type="checkbox" name="valorant" value="valorant" />
+        <label for="valorant">Valorant</label>
+        <input type="checkbox" name="fifa" value="fifa" />
+        <label for="fifa">FIFA 2023</label>
+        <input type="checkbox" name="csgo" value="csgo" />
+        <label for="fifa">CS:GO</label>
+        <br />
+        <br />
+
+        <label for="division">Select Your Division: </label>
+        <select name="division">
+          <option value="Dhaka">Dhaka</option>
+          <option value="Chattogram">Chattogram</option>
+          <option value="Sylhet">Sylhet</option>
+          <option value="Rajshahi">Rajshahi</option>
+          <option value="Barishal">Barishal</option>
+        </select>
+        <br /><br />
+
+        <label for="reason">Why do you want to attend?</label> <br />
+        <textarea name="reason" rows="5" cols="50"></textarea>
+        <br /><br />
+
+        <label for="secret">Password:</label>
+        <input name="secret" type="password" required />
+        <br /><br />
+
+        <button type="submit">Submit</button>
+        <!-- <input type="button" name="submit" value="Submit" /> -->
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>
